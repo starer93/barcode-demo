@@ -12,8 +12,9 @@ function App() {
         width={500}
         height={500}
         onUpdate={(err, result) => {
-          if (result) setData(result.text);
-          else setData("Not Found");
+          if (result) {
+            setData(result.text);
+          }
         }}
       />
       <p>{data}</p>
